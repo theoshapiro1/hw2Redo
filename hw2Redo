@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>Homework 2</title>
+<style>
+    ul {
+       height:100%;
+       position:fixed; 
+       background:rgb(13, 139, 112);
+    }
+    ul li {
+        margin: 5px;
+        padding: 5px;
+    }
+    ul li a {
+        color:white;
+        font-size:20px;
+    }
+    h1 {
+        text-align: center;
+        color: white
+    }
+    h2 {
+        text-align: center;
+    }
+    h5 {
+        text-align:center;
+    }
+    form {
+        text-align:center;
+    }
+    section {
+        height:100vh;
+        width:100vw;
+    }
+    #home {
+        background-color:red;
+    }
+    #menu {
+        background-color:red;
+    }
+    #contact {
+        background-color:yellow;
+    }
+    table {
+        text-align:center;
+        background-color:white;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td, th {
+        border: 1px solid #100f0f;
+        text-align: center;
+        padding: 8px;
+    }
+    #logo {
+    
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 75px;
+    width: 67px;
+    }
+    img {
+        width:100%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href= "#home">Home</a></li>
+            <li><a href ="#menu">Menu</a></li>
+            <li><a href ="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class ="content">
+        <section id="home">
+            <img src="wingsBackground2.jpg" width="1600" height="600">
+        </section>
+        <section id="menu">
+            <br />
+            <br />
+            <br />
+            <br />
+            <h2>MENU<br /></h2>
+            <h5>Mark an "x" over your desired quantity</h5>
+            <table>
+                <tr>
+                  <th>Flavor</th>
+                  <th>6 Piece</th>
+                  <th>12 Piece</th>
+                </tr>
+                <tr>
+                  <td>Cajun</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Louisiana Rub</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Original Hot</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Fire</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Honey Barbeque</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Lemon Lime</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+        </section>
+        <section id="contact">
+            <h2>CONTACT<br /></h2>
+            <h5>Welcome to House of Wings!</h5>
+            <form method="get" action ="dosomething.php" name = "form1" id = "form1"> 
+            <label for='txtNameId'><Name/label> <input type = 'text' name='txtName' id='txtNameId' placeholder="First Name">
+            <br/>
+            <label for='txtNameId2'><Name/label> <input type = 'text' name='txtName' id='txtNameId2' placeholder="Last Name">
+            <br />
+            <br />
+            <textarea>Send us an Email!</textarea>
+            <br />
+            <input type = 'button' value = 'press me' onclick="alert('Thanks for your email!')">
+            </form>
+        </section>
+
+    </div>
+    <div id="logo">
+        <img class = "resize" src="houseOfWingsLogo.jpg"/>
+      </div>
+</body>
+</html>
