@@ -4,7 +4,6 @@
 <meta charset = "utf-8">
 <title>Homework 2</title>
 <link rel ="stylesheet" type="text/css" href="HW2RedoExternalStylesheet.css"/>
-
 <style>
     ul {
        height:100%;
@@ -37,7 +36,7 @@
         width:100vw;
     }
     #home {
-        background-color:red;
+        background-color:yellow;
     }
     #menu {
         background-color:red;
@@ -52,6 +51,23 @@
         border-collapse: collapse;
         width: 100%;
     }
+    td, th {
+        border: 1px solid #100f0f;
+        text-align: center;
+        padding: 8px;
+    }
+    #logo {
+    
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 75px;
+    width: 67px;
+    }
+    img {
+        width:100%;
+        height: auto;
+    }
 </style>
 </head>
 <body>
@@ -64,7 +80,10 @@
     </nav>
     <div class ="content">
         <section id="home">
-            <img src="wingsBackground2.jpg" width="1600" height="600">
+            <h2>Welcome to House of Wings!</h2>
+            <br />
+            <br />
+            <h5>We offer a large selection of flavors and quantities. Click "Menu" to see our flavors and "Contact" to reach out to us.</h5>
         </section>
         <section id="menu">
             <br />
@@ -125,6 +144,7 @@
             <input type = 'button' value = 'press me' onclick="alert('Thanks for your email!')">
             </form>
         </section>
+        <img src="wingsBackground2.jpg" width="1600" height="600">
 
     </div>
     <div id="logo">
